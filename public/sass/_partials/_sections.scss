@@ -6,10 +6,16 @@ section {
     @media (max-width: 360px) {
         margin: 30px 0;
     }
-    .section-title {
+    .title-container {
+        width: 100%;
         text-align: center;
-        @media (max-width: 600px) {
-            font-size: 2rem;
+        .section-title {
+            border-bottom: 3px solid $contrast;
+            padding-bottom: 10px;
+            display: inline-block;
+            @media (max-width: 600px) {
+                font-size: 2rem;
+            }
         }
     }
 }
@@ -226,10 +232,10 @@ section {
                 margin-right: 1%;
             }
             .sol-title {
-                border-bottom: 3px solid white;
+                border-bottom: 1px solid white;
                 text-align: center;
                 margin: 0;
-                padding: 14px 0;
+                padding: 14px 6px;
             }
             .sol-text {
                 padding: 15px;
@@ -259,7 +265,7 @@ section {
                 margin: 0;
                 padding: 10px;
                 text-align: center;
-                border-bottom: 4px solid $primary;
+                border-bottom: 4px solid $secondary;
                 font-family: $font-xbold;
                 @media (max-width: 678px) {
                     font-size: 1.6rem;

@@ -6,7 +6,8 @@ $(document).ready(function() {
             next: "<a class='next'>&#10095;</a>"
         },
         autoplay: true,
-        delay: 5000
+        speed: 1200,
+        delay: 8000
     });
 
     // Don't show mobile menu on page load
