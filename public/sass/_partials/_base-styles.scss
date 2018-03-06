@@ -136,27 +136,34 @@ label {
     font-size: 1.4rem;
 }
 
-.btn-green {
+.btn-primary {
     @extend %btn;
     background-color: $primary;
     border: 1px solid $primary;
-    color: $dark-grey;
+    color: white;
     &:hover,
     &:focus,
     &:active {
         background-color: $primary-dark;
+        border-color: $primary-dark;
+        color: white;
     }
     &:disabled, 
     &[disabled] {
         cursor: not-allowed;
-        background-color: rgba(201, 211, 4, 0.6);
+        background-color: $primary-light;
+        border-color: $primary-light;
     }
 }
 
-.btn-green-xl {
-    @extend .btn-green;
+.btn-primary-xl {
+    @extend .btn-primary;
     padding: 15px 20px;
     font-size: 1.4rem;
+}
+
+a.btn-primary {
+    color: white;
 }
 
 .btn-dark-grey {
@@ -177,7 +184,7 @@ label {
 }
 
 .btn-dark-grey-xl {
-    @extend .btn-green;
+    @extend .btn-primary;
     padding: 15px 20px;
     font-size: 1.4rem;
 }

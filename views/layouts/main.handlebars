@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./public/css/unslider-dots.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <!-- Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {{!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
     <!-- META TAGS for Social Media -->
     <!-- Search Engine -->
     <meta name="description" content="Software to connect companies for creating economic value, saving natural resources and enabling communities.">
@@ -135,11 +135,11 @@
                     <label for="msg">Message</label>
                     <textarea name="msg" id="msg"></textarea>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LfIOEkUAAAAANvbdpYps7L8LslfjMZr1SD4LJz3" data-callback="recaptchaCallback"></div>
+                {{!-- <div class="g-recaptcha" data-sitekey="6LfIOEkUAAAAANvbdpYps7L8LslfjMZr1SD4LJz3" data-callback="recaptchaCallback"></div> --}}
             </div>
             <div class="modal-footer">
                 <button class="btn-dark-grey" onclick="closeModal('contact')">Cancel <span class="fa fa-times"></span></button>
-                <button id="contact-submit" type="submit" disabled="disabled" class="btn-green">Send <span class="fa fa-paper-plane"></span></button>
+                <button id="contact-submit" type="submit" disabled="disabled" class="btn-primary">Send <span class="fa fa-paper-plane"></span></button>
             </div>
         </form>
     </div>
@@ -177,7 +177,7 @@
             </p>
             <p>
                 Or fill in our contact form:<br />
-                <a class="btn-green" onclick="showModal('contact')">Contact form</a>
+                <a class="btn-primary" onclick="showModal('contact')">Contact form</a>
             </p>
         </div>
         <div id="map" class="footer-maps"></div>

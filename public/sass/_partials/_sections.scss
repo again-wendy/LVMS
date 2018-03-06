@@ -23,6 +23,27 @@ section {
             padding: 0;
             &:hover .circle, &:focus .circle, &:active .circle, .circle.active {
                 background-color: $primary;
+                #profit-icon, #people-icon {
+                    .cls-2 {
+                        stroke: $primary;
+                    }
+                }
+                #profit-icon {
+                    .cls-1 {
+                        fill: #cac9c9;
+                    }
+                    .cls-2 {
+                        fill: darken($grey, 30%);
+                    }
+                }
+                #people-icon {
+                    .cls-1 {
+                        fill: #cac9c9;
+                    }
+                    .cls-2 {
+                        fill: darken($grey, 30%);
+                    }
+                }
             }
             .circle {
                 background-color: $light-grey;
@@ -31,19 +52,39 @@ section {
                 border-radius: 50%;
                 position: relative;
                 transition: background-color 0.8s;
-                img {
+                img, svg {
                     height: 60%;
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    transition: all 1s;
+                }
+                #profit-icon {
+                    left: 55%;
+                    .cls-1, .cls-2 {
+                        fill: $dark-grey;
+                    }
+                    .cls-2 {
+                        stroke: white;
+                        stroke-miterlimit: 10;
+                        stroke-width: 4px;
+                    }
+                }
+                #people-icon {
+                    .cls-1 {
+                        fill: $grey;
+                    }
+                    .cls-2 {
+                        fill: $dark-grey;
+                        stroke: white;
+                        stroke-miterlimit: 10;
+                        stroke-width: 5;
+                    }
                 }
                 @media (max-width: 480px) {
                     display: none;
                 }
-            }
-            &:first-child .circle img {
-                left: 55%;
             }
             .block-title {
                 width: 80%;
@@ -55,6 +96,7 @@ section {
                 top: -12%;
                 h4 {
                     margin: 0;
+                    color: white;
                     @media(max-width: 768px) {
                         font-size: 1.5rem;
                     }
@@ -95,6 +137,7 @@ section {
                     margin: 0;
                     padding: 8px 0;
                     text-align: center;
+                    color: white;
                 }
                 p {
                     background: $light-grey;
