@@ -143,14 +143,14 @@ a:active {
 /* line 74, ../sass/_partials/_base-styles.scss */
 a.green-link,
 a.green-link:visited {
-  color: #c9d304;
+  color: #71519d;
 }
 
 /* line 79, ../sass/_partials/_base-styles.scss */
 a.green-link:focus,
 a.green-link:hover,
 a.green-link:active {
-  color: #b4bd03;
+  color: #65488d;
 }
 
 /* line 85, ../sass/_partials/_base-styles.scss */
@@ -211,13 +211,13 @@ label {
 
 /* line 139, ../sass/_partials/_base-styles.scss */
 .btn-green, .btn-green-xl, .btn-dark-grey-xl {
-  background-color: #c9d304;
-  border: 1px solid #c9d304;
+  background-color: #71519d;
+  border: 1px solid #71519d;
   color: #2b2b2b;
 }
 /* line 144, ../sass/_partials/_base-styles.scss */
 .btn-green:hover, .btn-green-xl:hover, .btn-dark-grey-xl:hover, .btn-green:focus, .btn-green-xl:focus, .btn-dark-grey-xl:focus, .btn-green:active, .btn-green-xl:active, .btn-dark-grey-xl:active {
-  background-color: #b4bd03;
+  background-color: #65488d;
 }
 /* line 149, ../sass/_partials/_base-styles.scss */
 .btn-green:disabled, .btn-green-xl:disabled, .btn-dark-grey-xl:disabled, .btn-green[disabled], [disabled].btn-green-xl, [disabled].btn-dark-grey-xl {
@@ -863,7 +863,7 @@ section .section-title {
 }
 /* line 24, ../sass/_partials/_sections.scss */
 #reasons .all-reasons .column:hover .circle, #reasons .all-reasons .column:focus .circle, #reasons .all-reasons .column:active .circle, #reasons .all-reasons .column .circle.active {
-  background-color: #c9d304;
+  background-color: #71519d;
 }
 /* line 27, ../sass/_partials/_sections.scss */
 #reasons .all-reasons .column .circle {
@@ -897,7 +897,7 @@ section .section-title {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  background: #c9d304;
+  background: #71519d;
   padding: 10px 0;
   position: relative;
   top: -12%;
@@ -921,7 +921,7 @@ section .section-title {
 @media (max-width: 480px) {
   /* line 66, ../sass/_partials/_sections.scss */
   #reasons .all-reasons .column .block-title.active {
-    background: #b4bd03;
+    background: #65488d;
   }
 }
 /* line 72, ../sass/_partials/_sections.scss */
@@ -957,7 +957,7 @@ section .section-title {
 }
 /* line 93, ../sass/_partials/_sections.scss */
 #reasons .block-reasons .block-reason .text-block h4 {
-  background: #c9d304;
+  background: #71519d;
   margin: 0;
   padding: 8px 0;
   text-align: center;
@@ -1249,7 +1249,7 @@ section .section-title {
   margin: 0;
   padding: 10px;
   text-align: center;
-  border-bottom: 4px solid #c9d304;
+  border-bottom: 4px solid #71519d;
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 678px) {
@@ -1504,7 +1504,7 @@ section .section-title {
 }
 /* line 82, ../sass/_partials/_modal.scss */
 #success-modal .modal-body .fa-check-circle {
-  color: #c9d304;
+  color: #71519d;
   font-size: 4rem;
   margin-bottom: 15px;
 }
