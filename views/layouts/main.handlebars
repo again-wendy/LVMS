@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAKRAN Vendor Management Services</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./public/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./public/images/favicons/safari-pinned-tab.svg" color="#c9d304">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b2b2b">
+    <meta name="msapplication-config" content="./public/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#2b2b2b">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="./public/css/normalize.css">
+    <link rel="stylesheet" href="./public/css/unslider.min.css">
+    <link rel="stylesheet" href="./public/css/unslider-dots.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- META TAGS for Social Media -->
+    <!-- Search Engine -->
+    <meta name="description" content="Software to connect companies for creating economic value, saving natural resources and enabling communities.">
+    <meta name="image" content="./public/images/again-cloud-commerce-company.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="AGAIN | Cloud, Commerce, Company">
+    <meta itemprop="description" content="Software to connect companies for creating economic value, saving natural resources and enabling communities.">
+    <meta itemprop="image" content="./public/images/again-cloud-commerce-company.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="AGAIN | Cloud, Commerce, Company">
+    <meta name="twitter:description" content="Software to connect companies for creating economic value, saving natural resources and enabling communities.">
+    <meta name="twitter:site" content="@againbylakran">
+    <meta name="twitter:image:src" content="./public/images/screenshot.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="AGAIN | Cloud, Commerce, Company">
+    <meta name="og:description" content="Software to connect companies for creating economic value, saving natural resources and enabling communities.">
+    <meta name="og:image" content="./public/images/screenshot.png">
+    <meta name="og:url" content="http://again.nl">
+    <meta name="og:site_name" content="AGAIN | Cloud, Commerce, Company">
+    <meta name="fb:admins" content="184172875337875">
+    <meta name="og:type" content="website">
+</head>
+<body>
+<div id="hero-slider">
+    <div class="slide-container">
+        <ul>
+            <li class="myslides slide-1">
+                <img class="logo" src="./public/images/lakran-vms-services-logo.png" alt="AGAIN Cloud Commerce Company">
+                <div class="text">Software to connect companies for creating economic value!</div>
+                <div class="buttons">
+                    <a onclick="scrollToReason('profit')" class="btn-white-transparent-xl">Our reasons</a><br />
+                    <a onclick="scrollToSolution('profit')" href="#solutions" class="btn-white-transparent-xl">Our solutions</a>
+                </div>
+            </li>
+            <li class="myslides slide-2">
+                <img class="logo" src="./public/images/lakran-vms-services-logo.png" alt="AGAIN Cloud Commerce Company">
+                <div class="text">Software to connect companies for saving natural resources</div>
+                <div class="buttons">
+                    <a onclick="scrollToReason('planet')" href="#reasons" class="btn-white-transparent-xl">Our reasons</a><br />
+                    <a onclick="scrollToSolution('planet')" href="#solutions" class="btn-white-transparent-xl">Our solutions</a>
+                </div>
+            </li>
+            <li class="myslides slide-3">
+                <img class="logo" src="./public/images/lakran-vms-services-logo.png" alt="AGAIN Cloud Commerce Company">
+                <div class="text">Software to connect companies for enabling communities</div>
+                <div class="buttons">
+                    <a onclick="scrollToReason('people')" href="#reasons" class="btn-white-transparent-xl">Our reasons</a><br />
+                    <a onclick="scrollToSolution('people')" href="#solutions" class="btn-white-transparent-xl">Our solutions</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<nav id="nav-bar">
+    <div class="left-menu">
+        <img onclick="menuClick('#hero-slider')" src="./public/images/lakran-vms-services-logo.png" alt="LAKRAN Vender Management Services">
+    </div>
+    <div class="right-menu">
+        <div class="mobile-toggle" onclick="toggleMobileMenu()">
+            <div class="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu-items">
+            <li class="menu-item menu-item-1">
+                <a onclick="menuClick('#reasons')">Our reasons</a>
+            </li>
+            <li class="menu-item menu-item-2">
+                <a onclick="menuClick('#solutions')">Our solutions</a>
+            </li>
+            <li class="menu-item menu-item-3">
+                <a onclick="menuClick('#technology')">Technology</a>
+            </li>
+            <li class="menu-item menu-item-4">
+                <a onclick="menuClick('#careers')">Careers</a>
+            </li>
+            <li class="menu-item menu-item-5">
+                <a onclick="menuClick('#mailing')">Mailing list</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+{{{body}}}
+
+<div id="contact-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Get in contact</h3>
+            <button class="close" onclick="closeModal('contact')">&times;</button>
+        </div>
+        <form id="contact-form" method="POST" action="send">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Message</label>
+                    <textarea name="msg" id="msg"></textarea>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LfIOEkUAAAAANvbdpYps7L8LslfjMZr1SD4LJz3" data-callback="recaptchaCallback"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-dark-grey" onclick="closeModal('contact')">Cancel <span class="fa fa-times"></span></button>
+                <button id="contact-submit" type="submit" disabled="disabled" class="btn-green">Send <span class="fa fa-paper-plane"></span></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="success-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Success!</h3>
+            <button class="close" onclick="closeSuccessModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <span class="fa fa-check-circle"></span>
+            <p>Your form has been sent successfully. We will contact you as soon as possible!</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn-dark-grey" onclick="closeSuccessModal()">Close <span class="fa fa-times"></span></button>
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer-text" itemscope itemtype="http://schema.org/LocalBusiness">
+            <strong itemprop="name">AGAIN by LAKRAN</strong> <br />
+            <p class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Apeldoornseweg 51</span><br />
+                <span itemprop="postOfficeBoxNumber">Postbus 115</span><br />
+                <span itemprop="postalCode">6800 AC</span> <span itemprop="addressLocality">Arnhem</span><br />
+                <span itemprop="addressCountry">The Netherlands</span>
+            </p>
+            <p>
+                <span class="fa fa-phone"></span> <a class="green-link" href="tel:+31263792417"><span itemprop="telephone">+31 26 - 379 24 17</span></a><br />
+                <span class="fa fa-envelope"></span> <a class="green-link" href="mailto:curious@again.nl"><span itemprop="email">curious@again.nl</span></a>
+            </p>
+            <p>
+                Or fill in our contact form:<br />
+                <a class="btn-green" onclick="showModal('contact')">Contact form</a>
+            </p>
+        </div>
+        <div id="map" class="footer-maps"></div>
+    </div>
+    <div class="other-brands">
+        <h6>AGAIN by LAKRAN is part of <a class="green-link" href="http://lakran.com" target="_blank">LAKRAN Commerce Group</a></h6>
+        <p>Other companies are:</p>
+        <div class="companies">
+            <a href="http://simplifyingpurchasing.com" target="_blank" title="LAKRAN Procurement Professionals">
+                <img src="./public/images/lakran-applogo.jpg" alt="LAKRAN Procurement Professionals Logo">
+            </a>
+            <a href="http://lakran.com/again-stichting" target="_blank" title="AGAIN stichting">
+                <img src="./public/images/against-applogo.png" alt="AGAIN stichting Logo">
+            </a>
+            <a href="http://flexforcemonkey.com" target="_blank" title="FlexForceMonkey">
+                <img src="./public/images/ffm-applogo.png" alt="FlexForceMonkey Logo">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="./public/js/jquery-3.3.1.min.js"></script>
+<script src="./public/js/unslider.min.js"></script>
+<script src="./public/js/script.js"></script>
+<script>
+    // Load Google Maps
+    function initMap() {
+        var uluru = {lat: 51.987260, lng: 5.908726};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<!-- Cookie Consent -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+    "popup": {
+    "background": "#2b2b2b",
+    "text": "#f5f5f5"
+    },
+    "button": {
+    "background": "#c9d304",
+    "text": "#2b2b2b"
+    }
+},
+"theme": "edgeless",
+"content": {
+    "message": "This website uses cookies to ensure you get the best experience on our website. ",
+    "dismiss": "Got it!",
+    "link": "Learn more"
+}
+})});
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9kvdsBwPUBpm2ek--o_hmg8c2WQ64DyU&callback=initMap"></script>
+{{!-- <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script> --}}
+</body>
+</html>
