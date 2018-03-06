@@ -68,7 +68,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-    color: $dark-grey-hover;
+    color: $dark-grey-light;
 }
 
 a.green-link,
@@ -79,12 +79,12 @@ a.green-link:visited {
 a.green-link:focus,
 a.green-link:hover,
 a.green-link:active {
-    color: $primary-hover;
+    color: $primary-dark;
 }
 
 input, textarea {
     padding: 6px;
-    border: 1px solid $light-grey-hover;
+    border: 1px solid $light-grey-dark;
     width: 100%;
     margin: 6px 0 8px 0;
 }
@@ -144,7 +144,7 @@ label {
     &:hover,
     &:focus,
     &:active {
-        background-color: $primary-hover;
+        background-color: $primary-dark;
     }
     &:disabled, 
     &[disabled] {
@@ -167,7 +167,7 @@ label {
     &:hover,
     &:focus,
     &:active {
-        background-color: $dark-grey-hover;
+        background-color: $dark-grey-light;
     }
     &:disabled, 
     &[disabled] {
