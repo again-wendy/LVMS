@@ -12,11 +12,7 @@
   },
   "author": "Wendy Dimmendaal",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
-  },
+  "devDependencies": {},
   "dependencies": {
     "@sendgrid/mail": "^6.2.1",
     "body-parser": "^1.18.2",
