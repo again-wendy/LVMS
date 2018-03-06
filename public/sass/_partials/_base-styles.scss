@@ -82,6 +82,17 @@ a.green-link:active {
     color: $primary-dark;
 }
 
+a.link-light,
+a.link-light:visited {
+    color: $secondary;
+}
+
+a.link-light:focus,
+a.link-light:hover,
+a.link-light:active {
+    color: $secondary-dark;
+}
+
 input, textarea {
     padding: 6px;
     border: 1px solid $light-grey-dark;
@@ -164,6 +175,31 @@ label {
 
 a.btn-primary {
     color: white;
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $secondary;
+    border: 1px solid $secondary;
+    color: $dark-grey;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $secondary-dark;
+        border-color: $secondary-dark;
+    }
+    &:disabled, 
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: $secondary-light;
+        border-color: $secondary-light;
+    }
+}
+
+.btn-secondary-xl {
+    @extend .btn-secondary;
+    padding: 15px 20px;
+    font-size: 1.4rem;
 }
 
 .btn-dark-grey {
