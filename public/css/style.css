@@ -180,7 +180,7 @@ label {
 }
 
 /* line 107, ../sass/_partials/_base-styles.scss */
-.btn-white-transparent, .btn-white-transparent-xl, .btn-primary, .btn-primary-xl, .btn-dark-grey-xl, .btn-secondary, .btn-secondary-xl, .btn-dark-grey {
+.btn-white-transparent, .btn-white-transparent-xl, .btn-contrast-transparent, .btn-contrast-transparent-xl, .btn-primary, .btn-primary-xl, .btn-dark-grey-xl, .btn-secondary, .btn-secondary-xl, .btn-dark-grey {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -223,89 +223,111 @@ label {
 }
 
 /* line 150, ../sass/_partials/_base-styles.scss */
+.btn-contrast-transparent, .btn-contrast-transparent-xl {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #ffd400;
+  color: #2b2b2b;
+}
+/* line 155, ../sass/_partials/_base-styles.scss */
+.btn-contrast-transparent:hover, .btn-contrast-transparent-xl:hover, .btn-contrast-transparent:focus, .btn-contrast-transparent-xl:focus, .btn-contrast-transparent:active, .btn-contrast-transparent-xl:active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 160, ../sass/_partials/_base-styles.scss */
+.btn-contrast-transparent:disabled, .btn-contrast-transparent-xl:disabled, .btn-contrast-transparent[disabled], [disabled].btn-contrast-transparent-xl {
+  cursor: not-allowed;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* line 167, ../sass/_partials/_base-styles.scss */
+.btn-contrast-transparent-xl {
+  padding: 15px 20px;
+  font-size: 1.4rem;
+}
+
+/* line 173, ../sass/_partials/_base-styles.scss */
 .btn-primary, .btn-primary-xl, .btn-dark-grey-xl {
   background-color: #71519d;
   border: 1px solid #71519d;
   color: white;
 }
-/* line 155, ../sass/_partials/_base-styles.scss */
+/* line 178, ../sass/_partials/_base-styles.scss */
 .btn-primary:hover, .btn-primary-xl:hover, .btn-dark-grey-xl:hover, .btn-primary:focus, .btn-primary-xl:focus, .btn-dark-grey-xl:focus, .btn-primary:active, .btn-primary-xl:active, .btn-dark-grey-xl:active {
   background-color: #4d376b;
   border-color: #4d376b;
   color: white;
 }
-/* line 162, ../sass/_partials/_base-styles.scss */
+/* line 185, ../sass/_partials/_base-styles.scss */
 .btn-primary:disabled, .btn-primary-xl:disabled, .btn-dark-grey-xl:disabled, .btn-primary[disabled], [disabled].btn-primary-xl, [disabled].btn-dark-grey-xl {
   cursor: not-allowed;
   background-color: #987ebc;
   border-color: #987ebc;
 }
 
-/* line 170, ../sass/_partials/_base-styles.scss */
+/* line 193, ../sass/_partials/_base-styles.scss */
 .btn-primary-xl {
   padding: 15px 20px;
   font-size: 1.4rem;
 }
 
-/* line 176, ../sass/_partials/_base-styles.scss */
+/* line 199, ../sass/_partials/_base-styles.scss */
 a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
   color: white;
 }
 
-/* line 180, ../sass/_partials/_base-styles.scss */
+/* line 203, ../sass/_partials/_base-styles.scss */
 .btn-secondary, .btn-secondary-xl {
   background-color: #b288bc;
   border: 1px solid #b288bc;
   color: #2b2b2b;
 }
-/* line 185, ../sass/_partials/_base-styles.scss */
+/* line 208, ../sass/_partials/_base-styles.scss */
 .btn-secondary:hover, .btn-secondary-xl:hover, .btn-secondary:focus, .btn-secondary-xl:focus, .btn-secondary:active, .btn-secondary-xl:active {
   background-color: #91599e;
   border-color: #91599e;
 }
-/* line 191, ../sass/_partials/_base-styles.scss */
+/* line 214, ../sass/_partials/_base-styles.scss */
 .btn-secondary:disabled, .btn-secondary-xl:disabled, .btn-secondary[disabled], [disabled].btn-secondary-xl {
   cursor: not-allowed;
   background-color: #d2b9d8;
   border-color: #d2b9d8;
 }
 
-/* line 199, ../sass/_partials/_base-styles.scss */
+/* line 222, ../sass/_partials/_base-styles.scss */
 .btn-secondary-xl {
   padding: 15px 20px;
   font-size: 1.4rem;
 }
 
-/* line 205, ../sass/_partials/_base-styles.scss */
+/* line 228, ../sass/_partials/_base-styles.scss */
 .btn-dark-grey {
   background-color: #2b2b2b;
   border: 1px solid #2b2b2b;
   color: white;
 }
-/* line 210, ../sass/_partials/_base-styles.scss */
+/* line 233, ../sass/_partials/_base-styles.scss */
 .btn-dark-grey:hover, .btn-dark-grey:focus, .btn-dark-grey:active {
   background-color: #515151;
 }
-/* line 215, ../sass/_partials/_base-styles.scss */
+/* line 238, ../sass/_partials/_base-styles.scss */
 .btn-dark-grey:disabled, .btn-dark-grey[disabled] {
   cursor: not-allowed;
   background-color: rgba(43, 43, 43, 0.6);
 }
 
-/* line 222, ../sass/_partials/_base-styles.scss */
+/* line 245, ../sass/_partials/_base-styles.scss */
 .btn-dark-grey-xl {
   padding: 15px 20px;
   font-size: 1.4rem;
 }
 
-/* line 228, ../sass/_partials/_base-styles.scss */
+/* line 251, ../sass/_partials/_base-styles.scss */
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   width: 100%;
 }
-/* line 233, ../sass/_partials/_base-styles.scss */
+/* line 256, ../sass/_partials/_base-styles.scss */
 .row .column {
   flex-basis: 0;
   flex-grow: 1;
@@ -313,12 +335,12 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
   padding: 15px;
 }
 
-/* line 241, ../sass/_partials/_base-styles.scss */
+/* line 264, ../sass/_partials/_base-styles.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 245, ../sass/_partials/_base-styles.scss */
+/* line 268, ../sass/_partials/_base-styles.scss */
 .entire-width {
   width: 100%;
 }
@@ -393,7 +415,7 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 /* line 47, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-1 {
-  background-image: url("https://againtest.azurewebsites.net/public/images/profit-overlay.jpg");
+  background-image: url("http://localhost:3000/public/images/profit-overlay.jpg");
 }
 @media (max-width: 575px) {
   /* line 49, ../sass/_partials/_hero-slider.scss */
@@ -439,7 +461,7 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 /* line 79, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-2 {
-  background-image: url("https://againtest.azurewebsites.net/public/images/planet-overlay.jpg");
+  background-image: url("http://localhost:3000/public/images/planet-overlay.jpg");
 }
 /* line 81, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-2 .text {
@@ -482,7 +504,7 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 /* line 108, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-3 {
-  background-image: url("https://againtest.azurewebsites.net/public/images/people-overlay.jpg");
+  background-image: url("http://localhost:3000/public/images/people-overlay.jpg");
 }
 /* line 110, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-3 .text {
@@ -550,13 +572,15 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
   }
 }
 /* line 154, ../sass/_partials/_hero-slider.scss */
-#hero-slider .slide-container .buttons .btn-white-transparent-xl {
+#hero-slider .slide-container .buttons .btn-white-transparent-xl,
+#hero-slider .slide-container .buttons .btn-contrast-transparent-xl {
   width: 200px;
   margin-bottom: 10px;
 }
 @media (max-width: 575px) {
   /* line 154, ../sass/_partials/_hero-slider.scss */
-  #hero-slider .slide-container .buttons .btn-white-transparent-xl {
+  #hero-slider .slide-container .buttons .btn-white-transparent-xl,
+  #hero-slider .slide-container .buttons .btn-contrast-transparent-xl {
     padding: 10px 12px;
     font-size: 1.2rem;
     width: 175px;
@@ -564,13 +588,15 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 @media (max-width: 375px) {
   /* line 154, ../sass/_partials/_hero-slider.scss */
-  #hero-slider .slide-container .buttons .btn-white-transparent-xl {
+  #hero-slider .slide-container .buttons .btn-white-transparent-xl,
+  #hero-slider .slide-container .buttons .btn-contrast-transparent-xl {
     width: 100%;
   }
 }
 @media (max-width: 1000px) and (max-height: 550px) and (orientation: landscape) {
   /* line 154, ../sass/_partials/_hero-slider.scss */
-  #hero-slider .slide-container .buttons .btn-white-transparent-xl {
+  #hero-slider .slide-container .buttons .btn-white-transparent-xl,
+  #hero-slider .slide-container .buttons .btn-contrast-transparent-xl {
     padding: 10px 12px;
     font-size: 1.2rem;
     width: 175px;
@@ -578,13 +604,14 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 @media (max-width: 785px) and (max-height: 375px) and (orientation: landscape) {
   /* line 154, ../sass/_partials/_hero-slider.scss */
-  #hero-slider .slide-container .buttons .btn-white-transparent-xl {
+  #hero-slider .slide-container .buttons .btn-white-transparent-xl,
+  #hero-slider .slide-container .buttons .btn-contrast-transparent-xl {
     padding: 4px 8px;
     font-size: 1rem;
     width: 150px;
   }
 }
-/* line 178, ../sass/_partials/_hero-slider.scss */
+/* line 179, ../sass/_partials/_hero-slider.scss */
 #hero-slider .prev, #hero-slider .next {
   cursor: pointer;
   position: absolute;
@@ -599,16 +626,16 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
   border-radius: 0 3px 3px 0;
   z-index: 9999;
 }
-/* line 191, ../sass/_partials/_hero-slider.scss */
+/* line 192, ../sass/_partials/_hero-slider.scss */
 #hero-slider .prev:hover, #hero-slider .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* line 195, ../sass/_partials/_hero-slider.scss */
+/* line 196, ../sass/_partials/_hero-slider.scss */
 #hero-slider .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-/* line 199, ../sass/_partials/_hero-slider.scss */
+/* line 200, ../sass/_partials/_hero-slider.scss */
 #hero-slider .unslider-nav {
   position: absolute;
   bottom: 20px;
@@ -617,12 +644,12 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
   text-align: center;
 }
 @media (max-width: 785px) and (max-height: 355px) and (orientation: landscape) {
-  /* line 199, ../sass/_partials/_hero-slider.scss */
+  /* line 200, ../sass/_partials/_hero-slider.scss */
   #hero-slider .unslider-nav {
     bottom: 0;
   }
 }
-/* line 208, ../sass/_partials/_hero-slider.scss */
+/* line 209, ../sass/_partials/_hero-slider.scss */
 #hero-slider .unslider-nav li {
   cursor: pointer;
   height: 25px;
@@ -634,14 +661,14 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
   transition: background-color 0.6s ease;
 }
 @media (max-width: 785px) and (max-height: 375px) and (orientation: landscape) {
-  /* line 208, ../sass/_partials/_hero-slider.scss */
+  /* line 209, ../sass/_partials/_hero-slider.scss */
   #hero-slider .unslider-nav li {
     width: 18px;
     height: 18px;
     border-width: 3px;
   }
 }
-/* line 223, ../sass/_partials/_hero-slider.scss */
+/* line 224, ../sass/_partials/_hero-slider.scss */
 #hero-slider .unslider-nav li.unslider-active, #hero-slider .unslider-nav li:hover {
   background-color: white;
 }
@@ -1154,7 +1181,7 @@ section .title-container .section-title {
   width: 49%;
   margin-left: 1%;
   color: white;
-  background: linear-gradient(rgba(113, 81, 157, 0.4), rgba(113, 81, 157, 0.4)), url("http://localhost:3000/public/images/building-block.jpg") no-repeat center;
+  background: linear-gradient(rgba(113, 81, 157, 0.25), rgba(113, 81, 157, 0.25)), url("http://localhost:3000/public/images/building-block.jpg") no-repeat center;
   background-size: cover;
   margin-bottom: 15px;
 }
@@ -1232,34 +1259,36 @@ section .title-container .section-title {
 /* line 1, ../sass/_partials/_banner.scss */
 .banner {
   width: 100%;
-  height: 220px;
+  height: 350px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+/* line 8, ../sass/_partials/_banner.scss */
+.banner .banner-text {
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 15, ../sass/_partials/_banner.scss */
+.banner .banner-text h2 {
+  font-size: 3.2rem;
 }
 
-/* line 9, ../sass/_partials/_banner.scss */
+/* line 21, ../sass/_partials/_banner.scss */
 .banner-1 {
   background-image: url("http://localhost:3000/public/images/banner1.jpg");
   background-attachment: fixed;
 }
 
-/* line 14, ../sass/_partials/_banner.scss */
+/* line 26, ../sass/_partials/_banner.scss */
 .banner-2 {
-  height: auto;
-  margin: -100px 0;
-}
-@media (max-width: 580px) {
-  /* line 14, ../sass/_partials/_banner.scss */
-  .banner-2 {
-    margin: -100px 0;
-  }
-}
-@media (max-width: 415px) {
-  /* line 14, ../sass/_partials/_banner.scss */
-  .banner-2 {
-    margin: -50px 0;
-  }
+  background-image: url("http://localhost:3000/public/images/stretch.jpg");
+  background-attachment: fixed;
 }
 
 /* line 1, ../sass/_partials/_footer.scss */

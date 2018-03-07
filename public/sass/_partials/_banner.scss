@@ -1,9 +1,21 @@
 .banner {
     width: 100%;
-    height: 220px;
+    height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    .banner-text {
+        color: white;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
 }
 
 .banner-1 {
@@ -12,12 +24,14 @@
 }
 
 .banner-2 {
-    height: auto;
-    margin: -100px 0;
-    @media (max-width: 580px) {
-        margin: -100px 0;
-    }
-    @media (max-width: 415px) {
-        margin: -50px 0;
-    }
+    // height: auto;
+    // margin: -100px 0;
+    // @media (max-width: 580px) {
+    //     margin: -100px 0;
+    // }
+    // @media (max-width: 415px) {
+    //     margin: -50px 0;
+    // }
+    background-image: url('http://localhost:3000/public/images/stretch.jpg');
+    background-attachment: fixed;
 }
