@@ -1180,53 +1180,56 @@ section .title-container .section-title {
 #solutions .solution-blocks .solution-block {
   width: 49%;
   margin-left: 1%;
-  color: white;
-  background: linear-gradient(rgba(113, 81, 157, 0.25), rgba(113, 81, 157, 0.25)), url("http://localhost:3000/public/images/building-block.jpg") no-repeat center;
-  background-size: cover;
+  color: #2b2b2b;
+  background-color: white;
   margin-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* line 230, ../sass/_partials/_sections.scss */
+/* line 223, ../sass/_partials/_sections.scss */
 #solutions .solution-blocks .solution-block:nth-child(odd) {
   margin-left: 0;
   margin-right: 1%;
 }
-/* line 234, ../sass/_partials/_sections.scss */
+/* line 227, ../sass/_partials/_sections.scss */
 #solutions .solution-blocks .solution-block .sol-title {
   border-bottom: 1px solid white;
   text-align: center;
   margin: 0;
-  padding: 14px 6px;
+  padding: 14px 10px;
+  color: white;
+  background: linear-gradient(rgba(113, 81, 157, 0.25), rgba(113, 81, 157, 0.25)), url("http://localhost:3000/public/images/building-block.jpg") no-repeat center;
+  background-size: cover;
 }
-/* line 240, ../sass/_partials/_sections.scss */
+/* line 243, ../sass/_partials/_sections.scss */
 #solutions .solution-blocks .solution-block .sol-text {
   padding: 15px;
 }
 
 @media (max-width: 580px) {
-  /* line 248, ../sass/_partials/_sections.scss */
+  /* line 251, ../sass/_partials/_sections.scss */
   #three-colums .row {
     flex-direction: column;
   }
 }
-/* line 252, ../sass/_partials/_sections.scss */
+/* line 255, ../sass/_partials/_sections.scss */
 #three-colums .row .column {
   background-color: #ececec;
   margin-right: 15px;
   padding: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* line 257, ../sass/_partials/_sections.scss */
+/* line 260, ../sass/_partials/_sections.scss */
 #three-colums .row .column:last-child {
   margin-right: 0;
 }
 @media (max-width: 580px) {
-  /* line 252, ../sass/_partials/_sections.scss */
+  /* line 255, ../sass/_partials/_sections.scss */
   #three-colums .row .column {
     margin-bottom: 20px;
     margin-right: 0;
   }
 }
-/* line 264, ../sass/_partials/_sections.scss */
+/* line 267, ../sass/_partials/_sections.scss */
 #three-colums .row .column .column-title {
   margin: 0;
   padding: 10px;
@@ -1235,22 +1238,22 @@ section .title-container .section-title {
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 678px) {
-  /* line 264, ../sass/_partials/_sections.scss */
+  /* line 267, ../sass/_partials/_sections.scss */
   #three-colums .row .column .column-title {
     font-size: 1.6rem;
   }
 }
-/* line 274, ../sass/_partials/_sections.scss */
+/* line 277, ../sass/_partials/_sections.scss */
 #three-colums .row .column .column-text {
   padding: 0 15px 15px 15px;
 }
 @media (max-width: 678px) {
-  /* line 274, ../sass/_partials/_sections.scss */
+  /* line 277, ../sass/_partials/_sections.scss */
   #three-colums .row .column .column-text {
     padding: 0 10px 10px 10px;
   }
 }
-/* line 279, ../sass/_partials/_sections.scss */
+/* line 282, ../sass/_partials/_sections.scss */
 #three-colums .row .column .column-text .indicates-required {
   font-size: 0.8rem;
   margin-bottom: 10px;

@@ -216,17 +216,10 @@ section {
         .solution-block {
             width: 49%;
             margin-left: 1%;
-            color: white;
-            background:
-                linear-gradient(
-                    rgba(113, 81, 157, 0.25),
-                    rgba(113, 81, 157, 0.25)
-                ),
-                url('http://localhost:3000/public/images/building-block.jpg')
-                no-repeat
-                center;
-            background-size: cover;
+            color: $dark-grey;
+            background-color: white;
             margin-bottom: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             &:nth-child(odd) {
                 margin-left: 0;
                 margin-right: 1%;
@@ -235,7 +228,17 @@ section {
                 border-bottom: 1px solid white;
                 text-align: center;
                 margin: 0;
-                padding: 14px 6px;
+                padding: 14px 10px;
+                color: white;
+                background:
+                linear-gradient(
+                    rgba(113, 81, 157, 0.25),
+                    rgba(113, 81, 157, 0.25)
+                ),
+                url('http://localhost:3000/public/images/building-block.jpg')
+                no-repeat
+                center;
+            background-size: cover;
             }
             .sol-text {
                 padding: 15px;
