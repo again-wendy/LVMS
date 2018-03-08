@@ -25,14 +25,14 @@ app.get('/', (req, res) => {
 
 app.post('/send', (req, res) => {
     let output = `
-        <h1>Contact Form AGAIN.nl</h1>
+        <h1>Reactie contactformulier LVMS</h1>
         <h2>Details:</h2>
         <ul>
-            <li>Name: ${req.body.name}</li>
+            <li>Naam: ${req.body.name}</li>
             <li>Email: <a href="mailto:${req.body.email}">${req.body.email}</a></li>
-            <li>Subject: ${req.body.subject}</li>
+            <li>Onderwerp: ${req.body.subject}</li>
         </ul>
-        <h4 style="margin-bottom:0;">Message:</h4> 
+        <h4 style="margin-bottom:0;">Bericht:</h4> 
         <p>${req.body.msg}</p>
     `;
 
@@ -50,10 +50,10 @@ app.post('/send', (req, res) => {
     });
     
     let HelperOptions = {
-        from: '"Contact Form AGAIN website" <wendy.dimmendaal@again.nl>',
+        from: '"Contactformulier LVMS website" <wendy.dimmendaal@again.nl>',
         to: 'wendy.dimmendaal@again.nl',
-        subject: 'Hello World',
-        text: 'Test 123',
+        subject: 'Reactie contactformulier',
+        text: '',
         html: output
     };
     

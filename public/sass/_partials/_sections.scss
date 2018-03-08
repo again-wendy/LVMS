@@ -50,6 +50,9 @@ section {
                         fill: darken($grey, 30%);
                     }
                 }
+                .fa {
+                    color: white;
+                }
             }
             .circle {
                 background-color: $light-grey;
@@ -65,6 +68,15 @@ section {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     transition: all 1s;
+                }
+                .fa {
+                    font-size: 8rem;
+                    display: inline-block;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: $dark-grey;
                 }
                 #profit-icon {
                     left: 55%;
@@ -173,8 +185,9 @@ section {
                 @media (max-width: 360px) {
                     display: none;
                 }
-                img {
-                    height: 60%;
+                img, span {
+                    // height: 60%;
+                    font-size: 4rem;
                     position: absolute;
                     top: 50%;
                     left: 50%;
