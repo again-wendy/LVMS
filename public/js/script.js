@@ -83,7 +83,7 @@ var reasonInterval = setInterval(function() {
         selectReason(undefined, 1);
         reasonIndex = 1;
     }
-}, 5000);
+}, 8000);
 
 // Set height of different elements
 function heightElements() {
@@ -98,9 +98,9 @@ function heightElements() {
     circleBlock.css("height", circleBlockWidth + "px");
 
     // Set all reasons same height
-    var peopleHeight = $("#reasons .block-reasons .people").height();
-    $("#reasons .block-reasons .profit").css("height", peopleHeight + "px");
-    $("#reasons .block-reasons .planet").css("height", peopleHeight + "px");
+    var howHeight = $("#reasons .block-reasons .how").height();
+    $("#reasons .block-reasons .why").css("height", howHeight + "px");
+    $("#reasons .block-reasons .what").css("height", howHeight + "px");
 
     // Set height of map so its the same as the text
     var heightText = $("#footer .footer-text").height();
@@ -119,22 +119,22 @@ function selectReason($event, reason) {
         $("#reasons .all-reasons ." + $event + " .block-title").addClass("active");
     } else if (reason !== undefined) {
         if (reason === 1) {
-            $("#reasons .block-reasons .profit").show();
-            $("#reasons .all-reasons .profit .circle").addClass("active");
-            $("#reasons .all-reasons .profit .block-title").addClass("active");
+            $("#reasons .block-reasons .why").show();
+            $("#reasons .all-reasons .why .circle").addClass("active");
+            $("#reasons .all-reasons .why .block-title").addClass("active");
         } else if (reason === 2) {
-            $("#reasons .block-reasons .planet").show();
-            $("#reasons .all-reasons .planet .circle").addClass("active");
-            $("#reasons .all-reasons .planet .block-title").addClass("active");
+            $("#reasons .block-reasons .what").show();
+            $("#reasons .all-reasons .what .circle").addClass("active");
+            $("#reasons .all-reasons .what .block-title").addClass("active");
         } else if (reason === 3) {
-            $("#reasons .block-reasons .people").show();
-            $("#reasons .all-reasons .people .circle").addClass("active");
-            $("#reasons .all-reasons .people .block-title").addClass("active");
+            $("#reasons .block-reasons .how").show();
+            $("#reasons .all-reasons .how .circle").addClass("active");
+            $("#reasons .all-reasons .how .block-title").addClass("active");
         }
     } else {
-        $("#reasons .block-reasons .profit").show();
-        $("#reasons .all-reasons .profit .circle").addClass("active");
-        $("#reasons .all-reasons .profit .block-title").addClass("active");
+        $("#reasons .block-reasons .why").show();
+        $("#reasons .all-reasons .why .circle").addClass("active");
+        $("#reasons .all-reasons .why .block-title").addClass("active");
     }
 }
 

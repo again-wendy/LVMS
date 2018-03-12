@@ -29,27 +29,6 @@ section {
             padding: 0;
             &:hover .circle, &:focus .circle, &:active .circle, .circle.active {
                 background-color: $primary;
-                #profit-icon, #people-icon {
-                    .cls-2 {
-                        stroke: $primary;
-                    }
-                }
-                #profit-icon {
-                    .cls-1 {
-                        fill: #cac9c9;
-                    }
-                    .cls-2 {
-                        fill: darken($grey, 30%);
-                    }
-                }
-                #people-icon {
-                    .cls-1 {
-                        fill: #cac9c9;
-                    }
-                    .cls-2 {
-                        fill: darken($grey, 30%);
-                    }
-                }
                 .fa {
                     color: white;
                 }
@@ -61,13 +40,8 @@ section {
                 border-radius: 50%;
                 position: relative;
                 transition: background-color 0.8s;
-                img, svg {
-                    height: 60%;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    transition: all 1s;
+                @media (max-width: 480px) {
+                    display: none;
                 }
                 .fa {
                     font-size: 8rem;
@@ -77,31 +51,12 @@ section {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     color: $dark-grey;
-                }
-                #profit-icon {
-                    left: 55%;
-                    .cls-1, .cls-2 {
-                        fill: $dark-grey;
+                    @media (max-width: 1330px) {
+                        font-size: 6rem;
                     }
-                    .cls-2 {
-                        stroke: white;
-                        stroke-miterlimit: 10;
-                        stroke-width: 4px;
+                    @media (max-width: 930px) {
+                        font-size: 4.2rem;
                     }
-                }
-                #people-icon {
-                    .cls-1 {
-                        fill: $grey;
-                    }
-                    .cls-2 {
-                        fill: $dark-grey;
-                        stroke: white;
-                        stroke-miterlimit: 10;
-                        stroke-width: 5;
-                    }
-                }
-                @media (max-width: 480px) {
-                    display: none;
                 }
             }
             .block-title {
@@ -129,10 +84,10 @@ section {
                 }
             }
         }
-        .profit .circle, .profit .block-title {
+        .why .circle, .why .block-title {
             margin: 0;
         }
-        .people .circle, .people .block-title {
+        .what .circle, .what .block-title {
             margin: 0 0 0 auto;
         }
     }
@@ -160,7 +115,7 @@ section {
                 p {
                     background: $light-grey;
                     margin: 0;
-                    padding: 20px 55px 20px 20px;
+                    padding: 20px 45px 20px 20px;
                     height: 100%;
                     @media (max-width: 480px) {
                         padding-right: 30px;
@@ -192,6 +147,12 @@ section {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    @media (max-width: 868px) {
+                        font-size: 3rem;
+                    }
+                    @media (max-width: 538px) {
+                        font-size: 2rem;
+                    }
                 }
             }
             .image-block {
@@ -204,20 +165,20 @@ section {
                 }
             }
         }
-        .profit .image-block {
-            background-image: url('https://againtest.azurewebsites.net/public/images/profit.jpg');
+        .why .image-block {
+            background-image: url('https://lakranvms.azurewebsites.net/public/images/why.jpg');
         }
-        .profit .icon-block img {
+        .why .icon-block img {
             margin-left: 2%;
             @media (max-width: 360px) {
                 margin-left: 5%;
             }
         }
-        .planet .image-block {
-            background-image: url('https://againtest.azurewebsites.net/public/images/planet.jpg');
+        .what .image-block {
+            background-image: url('https://lakranvms.azurewebsites.net/public/images/what.jpg');
         }
-        .people .image-block {
-            background-image: url('https://againtest.azurewebsites.net/public/images/people.jpg');
+        .how .image-block {
+            background-image: url('https://lakranvms.azurewebsites.net/public/images/how.jpg');
         }
     }
 }
@@ -237,6 +198,13 @@ section {
                 margin-left: 0;
                 margin-right: 1%;
             }
+            @media (max-width: 500px) {
+                width: 100%;
+                margin: 0 0 15px 0;
+                &:nth-child(odd) {
+                    margin-right: 0;
+                }
+            }
             .sol-title {
                 border-bottom: 1px solid white;
                 text-align: center;
@@ -248,17 +216,25 @@ section {
                     rgba(113, 81, 157, 0.25),
                     rgba(113, 81, 157, 0.25)
                 ),
-                url('http://localhost:3000/public/images/building-block.jpg')
+                url('https://lakranvms.azurewebsites.net/public/images/building-block.jpg')
                 no-repeat
                 center;
-            background-size: cover;
+                background-size: cover;
+                @media (max-width: 530px) {
+                    font-size: 1.5rem;
+                }
             }
             .sol-text {
                 padding: 15px;
-                ul li {
-                    list-style-type: square;
-                    margin-bottom: 4px;
-                }
+                ul {
+                    @media (max-width: 530px) {
+                        padding-left: 20px;
+                    }
+                    li {
+                        list-style-type: square;
+                        margin-bottom: 4px;
+                    }
+                } 
                 .img {
                     width: 50%;
                 }
