@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'ZwoOT';
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-Light.eot");
-  src: url("https://lakranvms.azurewebsites.net/public//fonts/ZwoOT-Light.eot?#iefix") format("embedded-opentype"), url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-Light.woff") format("woff"), url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-Light.ttf") format("truetype");
+  src: url("../fonts/ZwoOT-Light.eot");
+  src: url("..//fonts/ZwoOT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ZwoOT-Light.woff") format("woff"), url("../fonts/ZwoOT-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'ZwoOT-Xbold';
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-Xbold.eot");
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-Xbold.eot?#iefix") format("embedded-opentype"), url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-Xbold.woff") format("woff"), url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-Xbold.ttf") format("truetype");
+  src: url("../fonts/ZwoOT-Xbold.eot");
+  src: url("../fonts/ZwoOT-Xbold.eot?#iefix") format("embedded-opentype"), url("../fonts/ZwoOT-Xbold.woff") format("woff"), url("../fonts/ZwoOT-Xbold.ttf") format("truetype");
   font-weight: 800;
 }
 @font-face {
   font-family: 'ZwoOT-SemiBd';
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-SemiBd.eot");
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-SemiBd.eot?#iefix") format("embedded-opentype"), url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-SemiBd.woff") format("woff"), url("https://lakranvms.azurewebsites.net/public/fonts/ZwoOT-SemiBd.ttf") format("truetype");
+  src: url("../fonts/ZwoOT-SemiBd.eot");
+  src: url("../fonts/ZwoOT-SemiBd.eot?#iefix") format("embedded-opentype"), url("../fonts/ZwoOT-SemiBd.woff") format("woff"), url("../fonts/ZwoOT-SemiBd.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lifestyle M54';
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54.eot");
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54.eot?#iefix") format("embedded-opentype"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54.woff2") format("woff2"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54.woff") format("woff"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54.ttf") format("truetype");
+  src: url("../fonts/LifestyleM54.eot");
+  src: url("../fonts/LifestyleM54.eot?#iefix") format("embedded-opentype"), url("../fonts/LifestyleM54.woff2") format("woff2"), url("../fonts/LifestyleM54.woff") format("woff"), url("../fonts/LifestyleM54.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lifestyle M54';
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_1.eot");
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_1.eot?#iefix") format("embedded-opentype"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_1.woff2") format("woff2"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_1.woff") format("woff"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_1.ttf") format("truetype");
+  src: url("../fonts/LifestyleM54_1.eot");
+  src: url("../fonts/LifestyleM54_1.eot?#iefix") format("embedded-opentype"), url("../fonts/LifestyleM54_1.woff2") format("woff2"), url("../fonts/LifestyleM54_1.woff") format("woff"), url("../fonts/LifestyleM54_1.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lifestyle M54';
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_2.eot");
-  src: url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_2.eot?#iefix") format("embedded-opentype"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_2.woff2") format("woff2"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_2.woff") format("woff"), url("https://lakranvms.azurewebsites.net/public/fonts/LifestyleM54_2.ttf") format("truetype");
+  src: url("../fonts/LifestyleM54_2.eot");
+  src: url("../fonts/LifestyleM54_2.eot?#iefix") format("embedded-opentype"), url("../fonts/LifestyleM54_2.woff2") format("woff2"), url("../fonts/LifestyleM54_2.woff") format("woff"), url("../fonts/LifestyleM54_2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -446,7 +446,7 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 /* line 70, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-1 {
-  background-image: url("http://lakranvms.azurewebsites.net/public/images/why-overlay.jpg");
+  background-image: url("../images/why-overlay.jpg");
 }
 /* line 72, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-1 .text {
@@ -454,7 +454,7 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 /* line 76, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-2 {
-  background-image: url("http://lakranvms.azurewebsites.net/public/images/what-overlay.jpg");
+  background-image: url("../images/what-overlay.jpg");
 }
 /* line 78, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-2 .text {
@@ -462,7 +462,7 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 /* line 82, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-3 {
-  background-image: url("http://lakranvms.azurewebsites.net/public/images/how-overlay.jpg");
+  background-image: url("../images/how-overlay.jpg");
 }
 /* line 84, ../sass/_partials/_hero-slider.scss */
 #hero-slider .slide-container .slide-3 .text {
@@ -1071,7 +1071,7 @@ section .title-container .section-title {
 }
 /* line 163, ../sass/_partials/_sections.scss */
 #reasons .block-reasons .why .image-block {
-  background-image: url("https://lakranvms.azurewebsites.net/public/images/why.jpg");
+  background-image: url("../images/why.jpg");
 }
 /* line 166, ../sass/_partials/_sections.scss */
 #reasons .block-reasons .why .icon-block img {
@@ -1085,11 +1085,11 @@ section .title-container .section-title {
 }
 /* line 172, ../sass/_partials/_sections.scss */
 #reasons .block-reasons .what .image-block {
-  background-image: url("https://lakranvms.azurewebsites.net/public/images/what.jpg");
+  background-image: url("../images/what.jpg");
 }
 /* line 175, ../sass/_partials/_sections.scss */
 #reasons .block-reasons .how .image-block {
-  background-image: url("https://lakranvms.azurewebsites.net/public/images/how.jpg");
+  background-image: url("../images/how.jpg");
 }
 
 /* line 182, ../sass/_partials/_sections.scss */
@@ -1129,7 +1129,7 @@ section .title-container .section-title {
   margin: 0;
   padding: 14px 10px;
   color: white;
-  background: linear-gradient(rgba(113, 81, 157, 0.25), rgba(113, 81, 157, 0.25)), url("https://lakranvms.azurewebsites.net/public/images/building-block.jpg") no-repeat center;
+  background: linear-gradient(rgba(113, 81, 157, 0.25), rgba(113, 81, 157, 0.25)), url("../images/building-block.jpg") no-repeat center;
   background-size: cover;
 }
 @media (max-width: 530px) {
@@ -1237,13 +1237,13 @@ section .title-container .section-title {
 
 /* line 21, ../sass/_partials/_banner.scss */
 .banner-1 {
-  background-image: url("https://lakranvms.azurewebsites.net/public/images/stretch.jpg");
+  background-image: url("../images/stretch.jpg");
   background-attachment: fixed;
 }
 
 /* line 26, ../sass/_partials/_banner.scss */
 .banner-2 {
-  background-image: url("https://lakranvms.azurewebsites.net/public/images/desk.jpg");
+  background-image: url("../images/desk.jpg");
   background-attachment: fixed;
 }
 

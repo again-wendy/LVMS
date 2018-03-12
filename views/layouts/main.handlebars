@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./public/css/unslider-dots.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <!-- Recaptcha -->
-    {{!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> --}}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- META TAGS for Social Media -->
     <!-- Search Engine -->
     <meta name="description" content="Software to connect companies for creating economic value, saving natural resources and enabling communities.">
@@ -135,7 +135,7 @@
                     <label for="msg">Bericht</label>
                     <textarea name="msg" id="msg"></textarea>
                 </div>
-                {{!-- <div class="g-recaptcha" data-sitekey="6LfIOEkUAAAAANvbdpYps7L8LslfjMZr1SD4LJz3" data-callback="recaptchaCallback"></div> --}}
+                <div class="g-recaptcha" data-sitekey="6LeYMUwUAAAAALNoyEArZxQmraqWwnF5RuQ08V19" data-callback="recaptchaCallback"></div>
             </div>
             <div class="modal-footer">
                 <button class="btn-dark-grey" onclick="closeModal('contact')">Annuleren <span class="fa fa-times"></span></button>
@@ -156,7 +156,7 @@
             <p>Je formulier is succesvol verzonden. We zullen zo spoedig mogelijk contact met je opnemen!</p>
         </div>
         <div class="modal-footer">
-            <button class="btn-dark-grey" onclick="closeSuccessModal()">Close <span class="fa fa-times"></span></button>
+            <button class="btn-dark-grey" onclick="closeSuccessModal()">Sluiten <span class="fa fa-times"></span></button>
         </div>
     </div>
 </div>
@@ -244,8 +244,15 @@ window.cookieconsent.initialise({
 })});
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9kvdsBwPUBpm2ek--o_hmg8c2WQ64DyU&callback=initMap"></script>
-{{!-- <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
-//]]></script> --}}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115566568-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115566568-1');
+</script>
 </body>
 </html>

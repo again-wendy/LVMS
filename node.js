@@ -50,9 +50,9 @@ app.post('/send', (req, res) => {
     });
     
     let HelperOptions = {
-        from: '"Contactformulier LVMS website" <wendy.dimmendaal@again.nl>',
-        to: 'wendy.dimmendaal@again.nl',
-        subject: 'Reactie contactformulier',
+        from: '"Contactformulier LVMS website" <info@lakran.com>',
+        to: 'minke.mensink@lakran.com',
+        subject: 'Reactie contactformulier LVMS',
         text: '',
         html: output
     };

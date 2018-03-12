@@ -161,7 +161,7 @@ section {
             }
         }
         .why .image-block {
-            background-image: url('https://lakranvms.azurewebsites.net/public/images/why.jpg');
+            background-image: url('../images/why.jpg');
         }
         .why .icon-block img {
             margin-left: 2%;
@@ -170,10 +170,10 @@ section {
             }
         }
         .what .image-block {
-            background-image: url('https://lakranvms.azurewebsites.net/public/images/what.jpg');
+            background-image: url('../images/what.jpg');
         }
         .how .image-block {
-            background-image: url('https://lakranvms.azurewebsites.net/public/images/how.jpg');
+            background-image: url('../images/how.jpg');
         }
     }
 }
@@ -211,7 +211,7 @@ section {
                     rgba(113, 81, 157, 0.25),
                     rgba(113, 81, 157, 0.25)
                 ),
-                url('https://lakranvms.azurewebsites.net/public/images/building-block.jpg')
+                url('../images/building-block.jpg')
                 no-repeat
                 center;
                 background-size: cover;
