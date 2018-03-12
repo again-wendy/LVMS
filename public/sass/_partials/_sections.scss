@@ -100,11 +100,9 @@ section {
                 width: 47%;
                 overflow: hidden;
                 @media (max-width: 480px) {
-                    width: 65%;
-                }
-                @media (max-width: 360px) {
                     width: 100%;
                 }
+
                 h4 {
                     background: $primary;
                     margin: 0;
@@ -134,10 +132,6 @@ section {
                 top: 50%;
                 transform: translate(-50%, -50%);
                 @media (max-width: 480px) {
-                    left: 60%;
-                    width: 20%;
-                }
-                @media (max-width: 360px) {
                     display: none;
                 }
                 img, span {
@@ -160,7 +154,8 @@ section {
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
-                @media (max-width: 360px) {
+                //360
+                @media (max-width: 480px) {
                     display: none;
                 }
             }
