@@ -11,6 +11,9 @@
         padding: 8px 0 8px 35px;
         height: $nav-height;
         float: left;
+        @media (max-width: 856px) {
+            width: 15%;
+        }
         @media (max-width: 768px) {
             width: 49%;
         }
@@ -28,6 +31,9 @@
         width: 74%;
         height: $nav-height;
         padding-right: 20px;
+        @media (max-width: 856px) {
+            width: 84%;
+        }
         @media (max-width: 768px) {
             width: 49%;
         }
@@ -137,8 +143,9 @@
                         background: $contrast;
                         color: $dark-grey;
                     }
-                    @media (max-width: 850px) {
+                    @media (max-width: 1070px) {
                         font-size: 1rem;
+                        padding: 3vh 10px;
                     }
                     @media(max-width: 768px) {
                         text-align: left;

@@ -42,9 +42,6 @@ $(document).ready(function() {
     // Set reason to first one
     selectReason(undefined, 1);
 
-    // Hide all text from solution banners
-    $("#solutions .solution-banner .solution-text").hide();
-
     // Check URL for /send. Contact was sent succesfully so show the message
     if(window.location.href.indexOf("form=send") > -1) {
         $("#success-modal").fadeIn();
@@ -72,9 +69,8 @@ function scrollToReason($event) {
 // Scroll to right solution
 function scrollToSolution($event) {
     $("html, body").animate({
-        scrollTop: $("#solutions ." + $event).offset().top - 120
+        scrollTop: $("#solutions").offset().top - 120
     }, 1000);
-    showSolution($event);
 }
 
 // When page is loaded set interval to change the reasons
@@ -109,12 +105,6 @@ function heightElements() {
     // Set height of map so its the same as the text
     var heightText = $("#footer .footer-text").height();
     $("#map").css("height", heightText + "px");
-
-    // If screen is bigger than 668px set top of read more btns in solution banners
-    if($(window).width() > 668) {
-        var btnCssTop1 = $(".solution-banner img").height() - $(".solution-banner button").height() - 35;
-        $(".solution-banner button").css("top", btnCssTop1 + "px");
-    }
 }
 
 // Select the right reason. When a reason is clicked, stop the interval
@@ -145,19 +135,6 @@ function selectReason($event, reason) {
         $("#reasons .block-reasons .profit").show();
         $("#reasons .all-reasons .profit .circle").addClass("active");
         $("#reasons .all-reasons .profit .block-title").addClass("active");
-    }
-}
-
-// Toggle text from solution banner
-function showSolution($event) {
-    var text = $("#solutions ." + $event + " .solution-text");
-    var btn = $("#solutions ." + $event + " button");
-    if( text.css("display") === "none" ) {
-        text.slideDown();
-        btn.html("Close <span class='fa fa-caret-up'></span>");
-    } else {
-        text.slideUp();
-        btn.html("Read more <span class='fa fa-caret-down'></span>");
     }
 }
 

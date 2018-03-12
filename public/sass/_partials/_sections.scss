@@ -255,6 +255,13 @@ section {
             }
             .sol-text {
                 padding: 15px;
+                ul li {
+                    list-style-type: square;
+                    margin-bottom: 4px;
+                }
+                .img {
+                    width: 50%;
+                }
             }
         }
     }
