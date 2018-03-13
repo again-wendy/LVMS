@@ -125,6 +125,15 @@ function heightElements() {
     $("#map").css("height", heightText + "px");
 }
 
+// For the selectReason function
+function setReasons(className) {
+    $("#reasons .block-reasons ." + className).show();
+    $("#reasons .block-reasons ." + className).addClass("active");
+    $("#reasons .all-reasons ." + className + " .circle").addClass("active");
+    $("#reasons .all-reasons ." + className + " .block-title").addClass("active");
+    heightIconBlock(className);
+}
+
 // Select the right reason. When a reason is clicked, stop the interval
 function selectReason($event, reason) {
     $("#reasons .block-reasons .block-reason").hide();
@@ -133,37 +142,17 @@ function selectReason($event, reason) {
     $("#reasons .all-reasons .column .block-title").removeClass("active");
     if($event !== undefined) {
         clearInterval(reasonInterval);
-        $("#reasons .block-reasons ." + $event).show();
-        $("#reasons .block-reasons ." + $event).addClass("active");
-        $("#reasons .all-reasons ." + $event + " .circle").addClass("active");
-        $("#reasons .all-reasons ." + $event + " .block-title").addClass("active");
-        heightIconBlock($event);
+        setReasons($event);
     } else if (reason !== undefined) {
         if (reason === 1) {
-            $("#reasons .block-reasons .why").show();
-            $("#reasons .block-reasons .why").addClass("active");
-            $("#reasons .all-reasons .why .circle").addClass("active");
-            $("#reasons .all-reasons .why .block-title").addClass("active");
-            heightIconBlock('why');
+            setReasons('why');
         } else if (reason === 2) {
-            $("#reasons .block-reasons .what").show();
-            $("#reasons .block-reasons .what").addClass("active");
-            $("#reasons .all-reasons .what .circle").addClass("active");
-            $("#reasons .all-reasons .what .block-title").addClass("active");
-            heightIconBlock('what');
+            setReasons('what');
         } else if (reason === 3) {
-            $("#reasons .block-reasons .how").show();
-            $("#reasons .block-reasons .how").addClass("active");
-            $("#reasons .all-reasons .how .circle").addClass("active");
-            $("#reasons .all-reasons .how .block-title").addClass("active");
-            heightIconBlock('how');
+            setReasons('how');
         }
     } else {
-        $("#reasons .block-reasons .why").show();
-        $("#reasons .block-reasons .why").addClass("active");
-        $("#reasons .all-reasons .why .circle").addClass("active");
-        $("#reasons .all-reasons .why .block-title").addClass("active");
-        heightIconBlock('why');
+        setReasons('why');
     }
 }
 
