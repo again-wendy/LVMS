@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
+    // Specific for iOS devices
+    @media (-webkit-overflow-scrolling: touch) {
+        background-attachment: scroll;
+    }
     .banner-text {
         color: white;
         position: relative;
@@ -20,10 +25,8 @@
 
 .banner-1 {
     background-image: url('../images/stretch.jpg');
-    background-attachment: fixed;
 }
 
 .banner-2 {
     background-image: url('../images/desk.jpg');
-    background-attachment: fixed;
 }

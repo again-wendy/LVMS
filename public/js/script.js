@@ -33,10 +33,16 @@ $(document).ready(function() {
         $("#reasons").css("margin-top", contentHeight + "px");
     }
 
-    // Set height for different elements
+    // Set height for different elements and show/hide mobile menu
     heightElements();
+    heightIconBlock('why');
     $(window).resize(function() {
         heightElements();
+        if($(window).width() < 769) {
+            $("#nav-bar .right-menu .menu-items").hide();
+        } else {
+            $("#nav-bar .right-menu .menu-items").show();
+        }
     });
 
     // Set reason to first one
@@ -56,6 +62,13 @@ function menuClick(name) {
     if($(window).width() < 769) {
         toggleMobileMenu();
     }
+}
+
+// Scroll to element in screen
+function buttonClick(name) {
+    $("html, body").animate({
+        scrollTop: $(name).offset().top -120
+    }, 1000);
 }
 
 // Scroll to right reason
@@ -85,6 +98,13 @@ var reasonInterval = setInterval(function() {
     }
 }, 8000);
 
+// Set height icon-block 
+function heightIconBlock(className) {
+    var circleBlock = $("#reasons .block-reasons ." + className + " .icon-block");
+    var circleBlockWidth = circleBlock.width();
+    circleBlock.css("height", circleBlockWidth + "px");
+}
+
 // Set height of different elements
 function heightElements() {
     // Set height circles in #reasons
@@ -93,9 +113,7 @@ function heightElements() {
     circle.css("height", circleWidth + "px");
 
     // Set height circles in .icon-block
-    var circleBlock = $("#reasons .icon-block");
-    var circleBlockWidth = circleBlock.width();
-    circleBlock.css("height", circleBlockWidth + "px");
+    heightIconBlock('active');
 
     // Set all reasons same height
     var howHeight = $("#reasons .block-reasons .how").height();
@@ -110,31 +128,42 @@ function heightElements() {
 // Select the right reason. When a reason is clicked, stop the interval
 function selectReason($event, reason) {
     $("#reasons .block-reasons .block-reason").hide();
+    $("#reasons .block-reasons .block-reason").removeClass("active");
     $("#reasons .all-reasons .column .circle").removeClass("active");
     $("#reasons .all-reasons .column .block-title").removeClass("active");
     if($event !== undefined) {
         clearInterval(reasonInterval);
         $("#reasons .block-reasons ." + $event).show();
+        $("#reasons .block-reasons ." + $event).addClass("active");
         $("#reasons .all-reasons ." + $event + " .circle").addClass("active");
         $("#reasons .all-reasons ." + $event + " .block-title").addClass("active");
+        heightIconBlock($event);
     } else if (reason !== undefined) {
         if (reason === 1) {
             $("#reasons .block-reasons .why").show();
+            $("#reasons .block-reasons .why").addClass("active");
             $("#reasons .all-reasons .why .circle").addClass("active");
             $("#reasons .all-reasons .why .block-title").addClass("active");
+            heightIconBlock('why');
         } else if (reason === 2) {
             $("#reasons .block-reasons .what").show();
+            $("#reasons .block-reasons .what").addClass("active");
             $("#reasons .all-reasons .what .circle").addClass("active");
             $("#reasons .all-reasons .what .block-title").addClass("active");
+            heightIconBlock('what');
         } else if (reason === 3) {
             $("#reasons .block-reasons .how").show();
+            $("#reasons .block-reasons .how").addClass("active");
             $("#reasons .all-reasons .how .circle").addClass("active");
             $("#reasons .all-reasons .how .block-title").addClass("active");
+            heightIconBlock('how');
         }
     } else {
         $("#reasons .block-reasons .why").show();
+        $("#reasons .block-reasons .why").addClass("active");
         $("#reasons .all-reasons .why .circle").addClass("active");
         $("#reasons .all-reasons .why .block-title").addClass("active");
+        heightIconBlock('why');
     }
 }
 

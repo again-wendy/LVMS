@@ -1220,8 +1220,15 @@ section .title-container .section-title {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
-/* line 8, ../sass/_partials/_banner.scss */
+@media (-webkit-overflow-scrolling: touch) {
+  /* line 1, ../sass/_partials/_banner.scss */
+  .banner {
+    background-attachment: scroll;
+  }
+}
+/* line 13, ../sass/_partials/_banner.scss */
 .banner .banner-text {
   color: white;
   position: relative;
@@ -1230,21 +1237,19 @@ section .title-container .section-title {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-/* line 15, ../sass/_partials/_banner.scss */
+/* line 20, ../sass/_partials/_banner.scss */
 .banner .banner-text h2 {
   font-size: 3.2rem;
 }
 
-/* line 21, ../sass/_partials/_banner.scss */
+/* line 26, ../sass/_partials/_banner.scss */
 .banner-1 {
   background-image: url("../images/stretch.jpg");
-  background-attachment: fixed;
 }
 
-/* line 26, ../sass/_partials/_banner.scss */
+/* line 30, ../sass/_partials/_banner.scss */
 .banner-2 {
   background-image: url("../images/desk.jpg");
-  background-attachment: fixed;
 }
 
 /* line 1, ../sass/_partials/_footer.scss */
