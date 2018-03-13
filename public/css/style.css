@@ -1222,13 +1222,19 @@ section .title-container .section-title {
   position: relative;
   background-attachment: fixed;
 }
-@media (-webkit-overflow-scrolling: touch) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 1, ../sass/_partials/_banner.scss */
   .banner {
     background-attachment: scroll;
   }
 }
-/* line 13, ../sass/_partials/_banner.scss */
+@media only screen and (max-width: 768px) {
+  /* line 1, ../sass/_partials/_banner.scss */
+  .banner {
+    background-attachment: scroll;
+  }
+}
+/* line 16, ../sass/_partials/_banner.scss */
 .banner .banner-text {
   color: white;
   position: relative;
@@ -1237,17 +1243,17 @@ section .title-container .section-title {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-/* line 20, ../sass/_partials/_banner.scss */
+/* line 23, ../sass/_partials/_banner.scss */
 .banner .banner-text h2 {
   font-size: 3.2rem;
 }
 
-/* line 26, ../sass/_partials/_banner.scss */
+/* line 29, ../sass/_partials/_banner.scss */
 .banner-1 {
   background-image: url("../images/stretch.jpg");
 }
 
-/* line 30, ../sass/_partials/_banner.scss */
+/* line 33, ../sass/_partials/_banner.scss */
 .banner-2 {
   background-image: url("../images/desk.jpg");
 }
