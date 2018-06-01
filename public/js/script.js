@@ -190,42 +190,6 @@ function closeSuccessModal() {
     }, 400);
 }
 
-// Watch for click outside modal and close modal when its opened
-$(document).mouseup(function(e) {
-    var modal = $("#contact-modal .modal-content");
-
-    if($("#contact-modal").css("display") !== "none") {
-        // If the target of the click is not the container nor a descendent of the container, hide it
-        if(!modal.is(e.target) && modal.has(e.target).length === 0) {
-            $("#contact-modal").fadeOut();
-        }
-    }
-});
-$(document).mouseup(function(e) {
-    var modal = $("#success-modal .modal-content");
-
-    if($("#success-modal").css("display") !== "none") {
-        // If the target of the click is not the container nor a descendent of the container, hide it
-        if(!modal.is(e.target) && modal.has(e.target).length === 0) {
-            closeSuccessModal();
-        }
-    }
-});
-
-// Watch for key press (escape) and close modal when its opened
-$(document).keydown(function(e) {
-    if(e.which == 27 && $("#contact-modal").css("display") != "none") {
-        event.preventDefault();
-        $("#contact-modal").fadeOut();
-    }
-});
-$(document).keydown(function(e) {
-    if(e.which == 27 && $("#success-modal").css("display") != "none") {
-        event.preventDefault();
-        closeSuccessModal();
-    }
-});
-
 function sendForm(event) {
     event.preventDefault();
     var data = {};
