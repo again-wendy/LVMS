@@ -15,4 +15,22 @@
             height: 100%;
         }
     }
+    @media(max-height: 850px) {
+        margin-top: 5vh;
+        .iframe-container {
+            min-height: 95vh;
+        }
+    }
+    @media(max-height: 680px) {
+        margin-top: 6vh;
+        .iframe-container {
+            min-height: 94vh;
+        }
+    }
+    @media(max-height: 610px) {
+        margin-top: 8vh;
+        .iframe-container {
+            min-height: 92vh;
+        }
+    }
 }
