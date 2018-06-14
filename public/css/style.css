@@ -186,7 +186,7 @@ label {
 }
 
 /* line 112, ../sass/_partials/_base-styles.scss */
-.btn-white-transparent, .btn-white-transparent-xl, .btn-contrast-transparent, .btn-contrast-transparent-xl, .btn-primary, .btn-primary-xl, .btn-dark-grey-xl, .btn-secondary, .btn-secondary-xl, .btn-dark-grey {
+.btn-white-transparent, .btn-white-transparent-xl, .btn-contrast-transparent, .btn-contrast-transparent-xl, .btn-primary, .btn-primary-xl, .btn-secondary, .btn-secondary-xl, .btn-dark-grey, .btn-dark-grey-xl {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -251,19 +251,19 @@ label {
 }
 
 /* line 178, ../sass/_partials/_base-styles.scss */
-.btn-primary, .btn-primary-xl, .btn-dark-grey-xl {
+.btn-primary, .btn-primary-xl {
   background-color: #71519d;
   border: 1px solid #71519d;
   color: white;
 }
 /* line 183, ../sass/_partials/_base-styles.scss */
-.btn-primary:hover, .btn-primary-xl:hover, .btn-dark-grey-xl:hover, .btn-primary:focus, .btn-primary-xl:focus, .btn-dark-grey-xl:focus, .btn-primary:active, .btn-primary-xl:active, .btn-dark-grey-xl:active {
+.btn-primary:hover, .btn-primary-xl:hover, .btn-primary:focus, .btn-primary-xl:focus, .btn-primary:active, .btn-primary-xl:active {
   background-color: #4d376b;
   border-color: #4d376b;
   color: white;
 }
 /* line 190, ../sass/_partials/_base-styles.scss */
-.btn-primary:disabled, .btn-primary-xl:disabled, .btn-dark-grey-xl:disabled, .btn-primary[disabled], [disabled].btn-primary-xl, [disabled].btn-dark-grey-xl {
+.btn-primary:disabled, .btn-primary-xl:disabled, .btn-primary[disabled], [disabled].btn-primary-xl {
   cursor: not-allowed;
   background-color: #987ebc;
   border-color: #987ebc;
@@ -276,7 +276,7 @@ label {
 }
 
 /* line 204, ../sass/_partials/_base-styles.scss */
-a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
+a.btn-primary, a.btn-primary-xl {
   color: white;
 }
 
@@ -305,17 +305,17 @@ a.btn-primary, a.btn-primary-xl, a.btn-dark-grey-xl {
 }
 
 /* line 233, ../sass/_partials/_base-styles.scss */
-.btn-dark-grey {
+.btn-dark-grey, .btn-dark-grey-xl {
   background-color: #2b2b2b;
   border: 1px solid #2b2b2b;
   color: white;
 }
 /* line 238, ../sass/_partials/_base-styles.scss */
-.btn-dark-grey:hover, .btn-dark-grey:focus, .btn-dark-grey:active {
+.btn-dark-grey:hover, .btn-dark-grey-xl:hover, .btn-dark-grey:focus, .btn-dark-grey-xl:focus, .btn-dark-grey:active, .btn-dark-grey-xl:active {
   background-color: #515151;
 }
 /* line 243, ../sass/_partials/_base-styles.scss */
-.btn-dark-grey:disabled, .btn-dark-grey[disabled] {
+.btn-dark-grey:disabled, .btn-dark-grey-xl:disabled, .btn-dark-grey[disabled], [disabled].btn-dark-grey-xl {
   cursor: not-allowed;
   background-color: rgba(43, 43, 43, 0.6);
 }
@@ -1222,32 +1222,37 @@ section .title-container .section-title {
 #solutions .solution-blocks .solution-block .sol-text .img {
   width: 50%;
 }
+/* line 239, ../sass/_partials/_sections.scss */
+#solutions .solution-blocks .insights a {
+  width: 100%;
+  color: white;
+}
 
 @media (max-width: 580px) {
-  /* line 242, ../sass/_partials/_sections.scss */
+  /* line 248, ../sass/_partials/_sections.scss */
   #three-colums .row {
     flex-direction: column;
   }
 }
-/* line 246, ../sass/_partials/_sections.scss */
+/* line 252, ../sass/_partials/_sections.scss */
 #three-colums .row .column {
   background-color: #ececec;
   margin-right: 15px;
   padding: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* line 251, ../sass/_partials/_sections.scss */
+/* line 257, ../sass/_partials/_sections.scss */
 #three-colums .row .column:last-child {
   margin-right: 0;
 }
 @media (max-width: 580px) {
-  /* line 246, ../sass/_partials/_sections.scss */
+  /* line 252, ../sass/_partials/_sections.scss */
   #three-colums .row .column {
     margin-bottom: 20px;
     margin-right: 0;
   }
 }
-/* line 258, ../sass/_partials/_sections.scss */
+/* line 264, ../sass/_partials/_sections.scss */
 #three-colums .row .column .column-title {
   margin: 0;
   padding: 10px;
@@ -1256,22 +1261,22 @@ section .title-container .section-title {
   font-family: "ZwoOT-Xbold", Helvetica, Arial, sans-serif;
 }
 @media (max-width: 678px) {
-  /* line 258, ../sass/_partials/_sections.scss */
+  /* line 264, ../sass/_partials/_sections.scss */
   #three-colums .row .column .column-title {
     font-size: 1.6rem;
   }
 }
-/* line 268, ../sass/_partials/_sections.scss */
+/* line 274, ../sass/_partials/_sections.scss */
 #three-colums .row .column .column-text {
   padding: 0 15px 15px 15px;
 }
 @media (max-width: 678px) {
-  /* line 268, ../sass/_partials/_sections.scss */
+  /* line 274, ../sass/_partials/_sections.scss */
   #three-colums .row .column .column-text {
     padding: 0 10px 10px 10px;
   }
 }
-/* line 273, ../sass/_partials/_sections.scss */
+/* line 279, ../sass/_partials/_sections.scss */
 #three-colums .row .column .column-text .indicates-required {
   font-size: 0.8rem;
   margin-bottom: 10px;
@@ -1336,7 +1341,7 @@ section .title-container .section-title {
   font-size: 14px;
 }
 /* line 9, ../sass/_partials/_footer.scss */
-#footer .footer-text .btn-primary, #footer .footer-text .btn-primary-xl, #footer .footer-text .btn-dark-grey-xl {
+#footer .footer-text .btn-primary, #footer .footer-text .btn-primary-xl {
   width: 100%;
   margin-top: 8px;
 }

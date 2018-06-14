@@ -248,7 +248,7 @@ a.btn-primary {
 }
 
 .btn-dark-grey-xl {
-    @extend .btn-primary;
+    @extend .btn-dark-grey;
     padding: 15px 20px;
     font-size: 1.4rem;
 }
