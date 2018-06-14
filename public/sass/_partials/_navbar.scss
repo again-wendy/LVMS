@@ -1,4 +1,5 @@
-#nav-bar {
+#nav-bar,
+#simple-navbar {
     height: $nav-height;
     background-color: $lighter-grey;
     z-index: 9999;
@@ -160,7 +161,22 @@
         }
     }
 }
-#nav-bar.sticky {
+
+#simple-navbar {
+    height: 4vh;
+    .left-menu {
+        width: 100%;
+        height: 4vh;
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+            padding-top: 10px;
+        }
+    }
+}
+
+#nav-bar.sticky,
+#simple-navbar {
     position: fixed;
     top: 0;
     width: 100%;

@@ -152,36 +152,3 @@
     </div>
 </section>
 
-<section id="contact">
-    <div class="container">
-        <div class="title-container">
-            <h2 class="section-title">Contact</h2>
-        </div>
-        <div id="contactform">
-            {{#if messages.success}}
-                <p class="flash flash-success">Je formulier is succesvol verzonden! We nemen zo spoedig mogelijk contact met je op.</p>
-            {{/if}}
-            <form id="contactform" method="POST" action="send">
-                <div class="form-group">
-                    <label for="name">Naam</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Onderwerp</label>
-                    <input type="text" id="subject" name="subject">
-                </div>
-                <div class="form-group">
-                    <label for="msg">Bericht</label>
-                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                </div>
-                <p class="anti-spam">Laat dit leeg: <input type="text" name="url"></p>
-                <input type="submit" class="btn-primary" value="Verstuur">
-            </form>
-        </div>
-    </div>
-</section>
-
