@@ -20,6 +20,14 @@ strong {
     font-family: $font-bold;
 }
 
+.primary {
+    color: $primary;
+}
+
+.bold {
+    font-family: $font-bold;
+}
+
 .flash.flash-success {
     text-align: center;
     color: $success;
